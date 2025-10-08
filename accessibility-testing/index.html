@@ -159,10 +159,35 @@
                         <li>Art Gallery – Plainsboro Public Library</li>
                     </ul>
                     </p>
-                    <h3>Image Text Alternatives</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam
-                        sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione
-                        voluptatum molestiae adipisci, beatae obcaecati.</p>
+                    <h3 class="text-bg-warning">Image Text Alternatives: Needs Improvement</h3>
+                    <p>Text alternatives, also known as “alt text," are essential because they convey the purpose of
+                        images, such as pictures, illustrations, and other visual elements, to users who are unable to
+                        see them. This includes individuals using screen readers or those who disable images to speed up
+                        loading times or save bandwidth. The aim of this text is to provide an equivalent user
+                        experience, not just to describe the image.</p>
+                    <p class="text-bg-warning">
+                        While many of your pages use alt text to identify images, several do not. Additionally, the
+                        quality of the existing alt text on images that have it needs improvement. On your Book Club
+                        page, the linked images in the Upcoming Reads rotating image carousel lack alternative text.
+                        When displaying banners or posters, all information that someone without a visual disability can
+                        read on the image should also be accessible to patrons using screen readers, including event
+                        dates and times, not just the title, as I observed in your events carousel on the Events &
+                        Bookings page. Similarly, on your Events & Bookings page, two images have title attributes but
+                        no alt attributes. The Art Gallery page uses ARIA labels in the image carousel; unfortunately,
+                        they are numbered and do not provide helpful information for screen reader users. I also noticed
+                        that your footer element is missing alt text for the consortium logo, as well as the logos for
+                        the Apple App Store and Google Play Store.</p>
+                    <p>I recommend manually reviewing each page on your website to verify that your alt-text is accurate
+                        and provides sufficient, concise information about images. For your image carousels with
+                        posters, update the alt text to reflect the text shown on the posters. For images with title
+                        attributes but without alt text, consider adding an ARIA label. In this label, include the text
+                        on your drop-down menu, such as aria-label="Select a Library." Also, based on how it appears on
+                        your site, consider removing the two dashes before and after the phrase, as screen readers will
+                        read it as "dash-dash Select a Library dash-dash." For your footer, specify what each image
+                        represents, such as "Stella Consortium logo,” “Apple App Store Logo,” and “Google Play Store
+                        Logo.” You might also consider linking to the Apple and Google stores.
+                    </p>
+
                     <h3>Text:</h3>
                     <h4 class="text-center">Headings</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam
