@@ -283,16 +283,30 @@
                         voluptatum molestiae adipisci, beatae
                         obcaecati.</p>
                     <h3>Interaction:</h3>
-                    <h4 class="text-center">Keyboard Access and
-                        Visual Focus</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Quod aliquid, mollitia
-                        odio veniam
-                        sit iste esse assumenda amet aperiam
-                        exercitationem, ea animi blanditiis
-                        recusandae! Ratione
-                        voluptatum molestiae adipisci, beatae
-                        obcaecati.</p>
+                    <h4 class="text-center text-bg-warning">Keyboard Access and
+                        Visual Focus: Needs Improvement</h4>
+                    <p>Keyboard focus acts as a visible signal, highlighting the element currently in focus on a
+                        webpage. Many people cannot use a mouse, and those who are visually impaired or have mobility
+                        impairments often depend on keyboard navigation or assistive technologies that use keyboard
+                        commands. For users relying on keyboards for navigation, it is crucial to clearly identify which
+                        element has focus.</p>
+                    <p class="text-bg-warning"> On the Book Club, Visually Impaired Services, and Art Gallery pages, the
+                        visual focus disappears after navigating the drop-down menu. On the Book Club tab, it requires
+                        23 tab presses for keyboard focus to return. On the Visually Impaired Services page, the
+                        Directory of Services is completely inaccessible when using only the keyboard. On the Art
+                        Gallery page, it takes 22 tab presses to restore continuous keyboard focus. On the Event &
+                        Bookings page, the 'Skip to Content' link does not send you to the main content as intended.
+                        Additionally, there is no way to skip tabbing through the Upcoming Events list, which covers six
+                        weeks of events. Finally, on this page, keyboard-only users cannot navigate through the Events
+                        by Category sections, since only “Featured” is highlighted.</p>
+                    <p>I recommend reviewing your code to ensure that all interactive elements like buttons and links,
+                        have a tab index set to 0. On the Visually Impaired Services page, it appears that the links not
+                        accessible via keyboard control are all set to -1. Additionally, review your nav-link-category
+                        code on the Events & Bookings page and remove the role=“presentation” attribute, as this causes
+                        screen readers to skip this list item. Instead, use the code you have for the featured button
+                        and duplicate it, modifying it to match each category to ensure accessibility for keyboard-only
+                        users.
+                    </p>
                     <h4 class="text-center">Skip to Main</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur
                         adipisicing elit. Quod aliquid, mollitia
