@@ -151,14 +151,12 @@
                         <li>Events & Bookings | Plainsboro Public Library</li>
                         <li>Enjoy the Art Gallery Exhibits Presented by the Plainsboro Public…</li>
                     </ul>
-                    <p>I recommend updating your titles to match the approach used with your Book Club Webpage:
-                    </p>
+                    <p>I recommend updating your titles to match the approach used with your Book Club Webpage:</p>
                     <ul>
                         <li>Visually Impaired Services - Plainsboro Public Library</li>
                         <li>Events & Bookings – Plainsboro Public Library</li>
                         <li>Art Gallery – Plainsboro Public Library</li>
                     </ul>
-                    </p>
                     <h3 class="text-bg-warning">Image Text Alternatives: Needs Improvement</h3>
                     <p>Text alternatives, also known as “alt text," are essential because they convey the purpose of
                         images, such as pictures, illustrations, and other visual elements, to users who are unable to
@@ -185,8 +183,7 @@
                         your site, consider removing the two dashes before and after the phrase, as screen readers will
                         read it as "dash-dash Select a Library dash-dash." For your footer, specify what each image
                         represents, such as "Stella Consortium logo,” “Apple App Store Logo,” and “Google Play Store
-                        Logo.” You might also consider linking to the Apple and Google stores.
-                    </p>
+                        Logo.” You might also consider linking to the Apple and Google stores.</p>
                     <h3>Text:</h3>
                     <h4 class="text-center text-bg-warning">Headings: Needs Improvement</h4>
                     <p>Headings help users who cannot use a mouse or rely on screen readers understand the page's
@@ -227,8 +224,7 @@
                         enlarge the text or style it according to
                         your preference, ensuring that accessibility
                         for users with visual impairments remains
-                        uncompromised.
-                    </p>
+                        uncompromised.</p>
                     <h4 class="text-center text-bg-warning">Contrast Ratio
                         (color contrast): Needs Improvement </h4>
                     <p>Color contrast usually refers to the difference between the background color and the text. Some
@@ -241,28 +237,23 @@
                         with a ratio of 1.63:1. The dates in your events carousel also fail to meet the minimum contrast
                         ratio, with a ratio of 2.81:1. Additionally, the white text on the yellow background in your
                         footer has a contrast ratio of 1.68:1.</p>
-
                     <p class="text-bg-warning"> On the Visually Impaired Services page: <br>
                         The tab highlight color remains problematic, as does the white text on a yellow background in
                         your footer. However, under Directory Services, your Visually Impaired Services link appears in
                         a pale green with a 2.32:1 contrast ratio. It's also worth noting that clicking on that link
                         takes you back to the same webpage you're currently viewing; removing it entirely might be a
                         better option.</p>
-
                     <p class="text-bg-warning"> On the Events & Bookings page: <br>
                         Any white text on the blue background and any blue text on the white background do not meet the
                         minimum contrast ratio, instead reflecting a 3.66:1 ratio. Overall, this page has 109 contrast
                         errors.<br>
-
                         On the Art Gallery page: <br>
                         The tab highlight color remains an issue, as does the white text on a yellow background in your
                         footer. Another contrast problem is the links beneath your Latest Exhibit posters, which have a
                         contrast ratio of 2.3:1. </p>
-
                     <p>I suggest downloading and using ANDI to review your pages, as this tool offers an accessible
                         option that most closely aligns with your original color choice. You can then update your CSS to
-                        match these accessible color selections.
-                    </p>
+                        match these accessible color selections.</p>
                     <h4 class="text-center text-bg-warning">Zoom 200% Resize
                         Text: Needs Improvement</h4>
                     <p>Increasing the size of text and images to 200% or more is sometimes used to enhance readability
@@ -275,8 +266,7 @@
                         horizontal scrolling being necessary for users to access all categories.</p>
                     <p>My recommendation is to change the nav-tabs code from aria-orientation=“horizontal” to
                         “vertical”. Although users still need to scroll, vertical scrolling is generally more
-                        accessible.
-                    </p>
+                        accessible.</p>
                     <h4 class="text-center">Mobile View</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur
                         adipisicing elit. Quod aliquid, mollitia
@@ -309,8 +299,7 @@
                         code on the Events & Bookings page and remove the role=“presentation” attribute, as this causes
                         screen readers to skip this list item. Instead, use the code you have for the featured button
                         and duplicate it, modifying it to match each category to ensure accessibility for keyboard-only
-                        users.
-                    </p>
+                        users.</p>
                     <h4 class="text-center text-bg-warning">Skip to Main: Needs Improvement</h4>
                     <p>A skip to main link offers faster and simpler access to the main page content for keyboard-only
                         users, screen reader users, and other users of assistive technology. Without this link, users
@@ -323,18 +312,24 @@
                         When using the link to navigate to the main content, however, the user remained in the same
                         position as they were in the events carousel.</p>
                     <p>I suggest adding a level one heading in the main content and including an anchor target for that
-                        section in your code.
-                    </p>
-                    <h4 class="text-center">Forms, Labels, and
-                        Errors</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Quod aliquid, mollitia
-                        odio veniam
-                        sit iste esse assumenda amet aperiam
-                        exercitationem, ea animi blanditiis
-                        recusandae! Ratione
-                        voluptatum molestiae adipisci, beatae
-                        obcaecati.</p>
+                        section in your code.</p>
+                    <h4 class="text-center text-bg-warning">Forms, Labels, and
+                        Errors: Needs Improvement</h4>
+                    <p>Form field labels refer to the descriptions positioned adjacent to form fields. They specify the
+                        type of information to be entered or the options to be selected, such as checkboxes. These
+                        labels are crucial for ensuring that all users understand how to interact effectively with a
+                        form. </p>
+                    <p class="text-bg-warning">The only form present on all the webpages I evaluated was the search bar
+                        located in the top right corner. On the Book Club, Visually Impaired Services, and Art Gallery
+                        pages, your search box appears to have duplicate IDs in the code, such as input id="SearchBox”
+                        and button id="SearchButton.” A div element separates them; however, only one ID should be used
+                        per page. It also lacks a proper label for the search text field, so screen readers would not
+                        understand how to interpret this field. You do have radio buttons labeled; however, a screen
+                        reader may not be able to decipher what the group is for without an aria-label or a fieldset
+                        with a legend.</p>
+                    <p>My recommendation is to remove the duplicate block concerning the IDs, add a screen-reader-only
+                        hidden label to the search text field, and include a fieldset with a legend to help screen
+                        readers interpret the information more effectively.</p>
                     <h3>General:</h3>
                     <h4 class="text-center">Moving, Flashing, or
                         Blinking Content</h4>
