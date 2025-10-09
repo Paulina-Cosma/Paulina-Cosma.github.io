@@ -3498,11 +3498,11 @@ textarea.form-control-lg {
   --bs-dropdown-link-color: #dee2e6;
   --bs-dropdown-link-hover-color: #fff;
   --bs-dropdown-divider-bg: var(--bs-border-color-translucent);
-  --bs-dropdown-link-hover-bg: rgba(255, 255, 255, 0.15);
+  --bs-dropdown-link-hover-bg: #23f603;
   --bs-dropdown-link-active-color: #fff;
   --bs-dropdown-link-active-bg: #ee0979;
-  --bs-dropdown-link-disabled-color: #adb5bd;
-  --bs-dropdown-header-color: #adb5bd;
+  --bs-dropdown-link-disabled-color: #23f603;
+  --bs-dropdown-header-color: #13283c;
 }
 
 .btn-group,
