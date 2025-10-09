@@ -146,25 +146,28 @@
                         with disabilities in knowing where they are. The best way to make page titles accessible is to
                         “front-load' critical or unique information first. Currently, your page titles read:</p>
                     <ul class="text-bg-warning">
-                        <li>Book Club – Plainsboro Public Library</li>
+                        <li>Book Club – Plainsboro Public library</li>
                         <li>Visually Impaired Services offered thru the Talking Book & Braille…</li>
                         <li>Events & Bookings | Plainsboro Public Library</li>
                         <li>Enjoy the Art Gallery Exhibits Presented by the Plainsboro Public…</li>
                     </ul>
                     <p>I recommend updating your titles to match the approach used with your Book Club Webpage:</p>
-                    <ul  class="fa-ul mb-5">
+                    <ul class="fa-ul mb-5">
                         <li>
                             <span class="fa-link">
                                 <i class="fa-regular fa-thumbs-up fa-lg" style="color: #23f603;"></i>
-                            Visually Impaired Services - Plainsboro Public Library</span></li>
+                                Visually Impaired Services - Plainsboro Public Library</span>
+                        </li>
                         <li>
                             <span class="fa-link">
                                 <i class="fa-regular fa-thumbs-up fa-lg" style="color: #23f603;"></i>
-                            Events & Bookings – Plainsboro Public Library</span></li>
+                                Events & Bookings – Plainsboro Public Library</span>
+                        </li>
                         <li>
                             <span class="fa-link">
                                 <i class="fa-regular fa-thumbs-up fa-lg" style="color: #23f603;"></i>
-                            Art Gallery – Plainsboro Public Library </span></li>
+                                Art Gallery – Plainsboro Public Library </span>
+                        </li>
                     </ul>
                     <h3 class="text-bg-warning">Image Text Alternatives: Needs Improvement</h3>
                     <p>Text alternatives, also known as “alt text," are essential because they convey the purpose of
@@ -280,15 +283,20 @@
                     <p>My recommendation is to change the nav-tabs code from aria-orientation=“horizontal” to
                         “vertical”. Although users still need to scroll, vertical scrolling is generally more
                         accessible.</p>
-                    <h4 class="text-center">Mobile View</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Quod aliquid, mollitia
-                        odio veniam
-                        sit iste esse assumenda amet aperiam
-                        exercitationem, ea animi blanditiis
-                        recusandae! Ratione
-                        voluptatum molestiae adipisci, beatae
-                        obcaecati.</p>
+                    <h4 class="text-center text-bg-warning">Mobile View: Needs Improvement</h4>
+                    <p>In this digital age, users can access your website from various devices, including their mobile
+                        phones. The mobile view is used to ensure that accessibility is maintained on smaller screens
+                        without compromising the website's integrity.</p>
+                    <p>The Book Club and Visually Impaired Services page both looked great in the mobile view; they
+                        scaled down really well and retained their integrity when I zoomed in. </p>
+                    <p class="text-bg-warning">The Events & Bookings and Art Gallery pages, however, did not scale down
+                        well, requiring users to horizontally scroll to view the page. I believe this is a result of the
+                        carousels located at the tops of these pages. Furthermore, when you zoom in on these pages, the
+                        problem worsens.</p>
+                    <p>I recommend moving the carousels away from the top of the page. Also, compare the code from the
+                        Book Club and Visually Impaired pages with that of the Events & Bookings and Art Gallery pages
+                        to identify what is affecting the mobile view.
+                    </p>
                     <h3>Interaction:</h3>
                     <h4 class="text-center text-bg-warning">Keyboard Access and
                         Visual Focus: Needs Improvement</h4>
@@ -378,14 +386,16 @@
                         other assistive devices would “see” when interacting with a website. Once the webpage
                         information is “linearized,” it becomes easier to identify where potential accessibility issues
                         may occur.</p>
-                    <p class="text-bg-warning">On the Book Club, Visually Impaired Services, and Art Gallery page, the search box appears twice,
+                    <p class="text-bg-warning">On the Book Club, Visually Impaired Services, and Art Gallery page, the
+                        search box appears twice,
                         once before the menu and again immediately after it. Also, the consortium logo, the Apple App
                         Store, and the Google Play Store all appear at the end.</p>
                     <p>I recommend reviewing the section of code that precedes and ends the menu items so you can remove
                         the redundancy that causes the user to return to the search box at the end of the menu.
                         Similarly, in the footer, include alt text for the logos and consider adding links to the Apple
                         App Store and Google Play Store, labeling them accordingly.
-                    <p class="text-bg-warning">On the Book Club page, although images have been disabled, your top banner, which I had assumed
+                    <p class="text-bg-warning">On the Book Club page, although images have been disabled, your top
+                        banner, which I had assumed
                         was a photo, remains visible. Immediately following the "Upcoming Reads" paragraph, there is a
                         significant gap with no text or pictures, preceded by a date, a time, a link, and then "History
                         Room" with seven empty bullet points. "View Details" concludes the section. This pattern is
@@ -396,11 +406,13 @@
                     <p>I suggest labeling your banner as an image and adding alternative text to it. Similarly, review
                         your carousel code and remove any unnecessary elements. More importantly, make sure all links
                         are properly labeled and identified, and label the posters as images with alt text.</p>
-                    <p class="text-bg-warning">On the Visually Impaired Services page the banner image continues to be visible when images are
+                    <p class="text-bg-warning">On the Visually Impaired Services page the banner image continues to be
+                        visible when images are
                         disabled, indicating that it is not properly labeled.</p>
                     <p>Be sure to label this element as an image and include alt text because screen readers and other
                         assistive devices cannot interpret images that aren’t correctly labeled.</p>
-                    <p class="text-bg-warning">On the Events & Bookings page, parts of the Plainsboro Public Library logo are visible, along
+                    <p class="text-bg-warning">On the Events & Bookings page, parts of the Plainsboro Public Library
+                        logo are visible, along
                         with posters in the events carousel. The "Filter by category” option appears twice, once in the
                         upcoming event section and again lower on the page. Without headings near the other filter
                         groupings, it's unclear whether this filter is redundant or intended for a different purpose.
@@ -420,7 +432,8 @@
                         cells, as this can confuse screen readers by disrupting the expected grid layout. Apply these
                         guidelines to all tables on the page. Using semantic tags like table, th, and td helps screen
                         readers correctly interpret the relationship between the cell and the header correctly.</p>
-                    <p class="text-bg-warning">On the Art Gallery page, twelve images from the carousel are displayed, with some being
+                    <p class="text-bg-warning">On the Art Gallery page, twelve images from the carousel are displayed,
+                        with some being
                         duplicates. This is followed by a paragraph about the library art gallery and then the “Our
                         Latest Exhibits” section. In this last section, posters showcasing past exhibits are shown.</p>
                     <p>To make this page more accessible, label the images as such and add alt text to help screen
@@ -437,7 +450,12 @@
             <div class="p-5">
                 <div class="row gx-5 align-items-center">
                     <h2 class="display-4 text-center text-primary">Summary</h2>
-                    <p>In conducting this evaluation, my goal was to enhance the accessibility of the Plainsboro Public Library for all community members. While your website needs some adjustments to achieve full accessibility, most of the pages I reviewed were well-designed. Some pages only require minor changes to ensure universal access, while others will require more extensive work. I appreciate all that you do for our community. I sincerely hope you find my assessment helpful. Thank you for your time and commitment to accessibility.</p>
+                    <p>In conducting this evaluation, my goal was to enhance the accessibility of the Plainsboro Public
+                        Library for all community members. While your website needs some adjustments to achieve full
+                        accessibility, most of the pages I reviewed were well-designed. Some pages only require minor
+                        changes to ensure universal access, while others will require more extensive work. I appreciate
+                        all that you do for our community. I sincerely hope you find my assessment helpful. Thank you
+                        for your time and commitment to accessibility.</p>
                 </div>
             </div>
         </div>
