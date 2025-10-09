@@ -171,15 +171,19 @@
                         read on the image should also be accessible to patrons using screen readers, including event
                         dates and times, not just the title, as I observed in your events carousel on the Events &
                         Bookings page. Similarly, on your Events & Bookings page, two images have title attributes but
-                        no alt attributes. The Art Gallery page uses ARIA labels in the image carousel; unfortunately,
+                        no alt attributes. Additionally, on the Events & Bookings page, I noticed several table
+                        elements; none have headers, which could confuse users with screen readers, as all the
+                        information would appear as unstructured table data. The Art Gallery page uses ARIA labels in
+                        the image carousel; unfortunately,
                         they are numbered and do not provide helpful information for screen reader users. I also noticed
                         that your footer element is missing alt text for the consortium logo, as well as the logos for
                         the Apple App Store and Google Play Store.</p>
                     <p>I recommend manually reviewing each page on your website to verify that your alt-text is accurate
-                        and provides sufficient, concise information about images. For your image carousels with
-                        posters, update the alt text to reflect the text shown on the posters. For images with title
-                        attributes but without alt text, consider adding an ARIA label. In this label, include the text
-                        on your drop-down menu, such as aria-label="Select a Library." Also, based on how it appears on
+                        and provides sufficient, concise information about images. For images with title attributes but
+                        without alt text, consider adding an ARIA label to provide additional accessibility information.
+                        To improve your table, add a hidden table header that enables screen readers to better interpret
+                        the table data. In this ARIA label, you can include the text on your drop-down menu, such as
+                        aria-label="Select a Library." Also, based on how it appears on
                         your site, consider removing the two dashes before and after the phrase, as screen readers will
                         read it as "dash-dash Select a Library dash-dash." For your footer, specify what each image
                         represents, such as "Stella Consortium logo,” “Apple App Store Logo,” and “Google Play Store
@@ -340,7 +344,8 @@
                         focus on other parts of the webpage because of the moving content. Additionally, blinking
                         content can trigger seizures in people with photosensitive epilepsy, especially if it flashes
                         more than three times per second, covers a large part of the screen, and is bright enough.</p>
-                    <p class="text-bg-warning">Three of the four webpages I assessed had moving carousels, but only the Events & Bookings page
+                    <p class="text-bg-warning">Three of the four webpages I assessed had moving carousels, but only the
+                        Events & Bookings page
                         had a pause button.</p>
                     <p>I suggest adding carousel buttons to all your carousels, similar to those on the Events &
                         Bookings page. Using the existing code and modifying it if needed will be the easiest solution.
@@ -348,17 +353,69 @@
                     <h4 class="text-center">Multimedia (video,
                         audio) Alternatives and Closed
                         Captioning: Not Applicable</h4>
-                    <p>Multimedia alternatives and closed captioning help people who are blind or have low vision access visual information. Similarly, captions and text transcripts help people who are deaf or hard of hearing in accessing audio content. There are three types of multimedia alternatives to consider: captions, transcripts, and audio descriptions. Captions are written versions of speech and non-speech audio that are necessary to understand the video, and they are displayed alongside the video. <strong>Please note that automatic captions are rarely sufficient for accessibility because they often lack accuracy and proper grammar.</strong> Transcripts are written versions of speech and non-speech information from audio content, made available separately from the video. Audio descriptions provide visual details needed to comprehend the content, including text shown in the video.</p>
-                    <h4 class="text-center">Basic Structure
-                        Check</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Quod aliquid, mollitia
-                        odio veniam
-                        sit iste esse assumenda amet aperiam
-                        exercitationem, ea animi blanditiis
-                        recusandae! Ratione
-                        voluptatum molestiae adipisci, beatae
-                        obcaecati.</p>
+                    <p>Multimedia alternatives and closed captioning help people who are blind or have low vision access
+                        visual information. Similarly, captions and text transcripts help people who are deaf or hard of
+                        hearing in accessing audio content. There are three types of multimedia alternatives to
+                        consider: captions, transcripts, and audio descriptions. Captions are written versions of speech
+                        and non-speech audio that are necessary to understand the video, and they are displayed
+                        alongside the video. <strong>Please note that automatic captions are rarely sufficient for
+                            accessibility because they often lack accuracy and proper grammar.</strong> Transcripts are
+                        written versions of speech and non-speech information from audio content, made available
+                        separately from the video. Audio descriptions provide visual details needed to comprehend the
+                        content, including text shown in the video.</p>
+                    <h4 class="text-center text-bg-warning">Basic Structure
+                        Check: Needs Improvement</h4>
+                    <p>This check disables images and display styles to identify what a user using a screen reader or
+                        other assistive devices would “see” when interacting with a website. Once the webpage
+                        information is “linearized,” it becomes easier to identify where potential accessibility issues
+                        may occur.</p>
+                    <p class="text-bg-warning">On the Book Club, Visually Impaired Services, and Art Gallery page, the search box appears twice,
+                        once before the menu and again immediately after it. Also, the consortium logo, the Apple App
+                        Store, and the Google Play Store all appear at the end.</p>
+                    <p>I recommend reviewing the section of code that precedes and ends the menu items so you can remove
+                        the redundancy that causes the user to return to the search box at the end of the menu.
+                        Similarly, in the footer, include alt text for the logos and consider adding links to the Apple
+                        App Store and Google Play Store, labeling them accordingly.
+                    <p class="text-bg-warning">On the Book Club page, although images have been disabled, your top banner, which I had assumed
+                        was a photo, remains visible. Immediately following the "Upcoming Reads" paragraph, there is a
+                        significant gap with no text or pictures, preceded by a date, a time, a link, and then "History
+                        Room" with seven empty bullet points. "View Details" concludes the section. This pattern is
+                        repeated three times. The following pattern is essentially the same as the first, though there
+                        is now a poster “image” in the space where the large gap existed in the first pattern. This is
+                        repeated three times before repeating the same pattern, featuring ample blank space, three more
+                        times.</p>
+                    <p>I suggest labeling your banner as an image and adding alternative text to it. Similarly, review
+                        your carousel code and remove any unnecessary elements. More importantly, make sure all links
+                        are properly labeled and identified, and label the posters as images with alt text.</p>
+                    <p class="text-bg-warning">On the Visually Impaired Services page the banner image continues to be visible when images are
+                        disabled, indicating that it is not properly labeled.</p>
+                    <p>Be sure to label this element as an image and include alt text because screen readers and other
+                        assistive devices cannot interpret images that aren’t correctly labeled.</p>
+                    <p class="text-bg-warning">On the Events & Bookings page, parts of the Plainsboro Public Library logo are visible, along
+                        with posters in the events carousel. The "Filter by category” option appears twice, once in the
+                        upcoming event section and again lower on the page. Without headings near the other filter
+                        groupings, it's unclear whether this filter is redundant or intended for a different purpose.
+                        There's also an automated graphic that does not appear on the webpage when images and style
+                        sheets are enabled. Due to the improper formatting of what seems to be a calendar, the
+                        information is unclear for a significant portion of this linearized page. After the “Events by
+                        Category” hyperlink section, there are several incorrectly structured tables that lack headers,
+                        contain nonsensical content, and make it difficult to determine whether this is one table or
+                        multiple tables, especially considering that when the style sheet and images are enabled,
+                        multiple tables are present. Unfortunately, this page needs considerable improvement.</p>
+                    <p>Label decorative images accordingly and provide appropriate alt text for all other images.
+                        Evaluate whether the 'Filter by category' is redundant and, if not, assign it to the correct
+                        section. Adding headings throughout this page would greatly enhance navigation and
+                        understanding. Review your code to identify that graphic and remove it; it’s not present on your
+                        styled page and is unnecessary. Format your calendar as a table with clear headers and scope.
+                        Include a caption that describes the table, such as the month and year. Do not merge or split
+                        cells, as this can confuse screen readers by disrupting the expected grid layout. Apply these
+                        guidelines to all tables on the page. Using semantic tags like table, th, and td helps screen
+                        readers correctly interpret the relationship between the cell and the header correctly.</p>
+                    <p class="text-bg-warning">On the Art Gallery page, twelve images from the carousel are displayed, with some being
+                        duplicates. This is followed by a paragraph about the library art gallery and then the “Our
+                        Latest Exhibits” section. In this last section, posters showcasing past exhibits are shown.</p>
+                    <p>To make this page more accessible, label the images as such and add alt text to help screen
+                        readers understand the content on the page. </p>
                 </div>
             </div>
         </div>
